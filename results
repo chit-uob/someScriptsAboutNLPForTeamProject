@@ -1,0 +1,22 @@
+0.7645932782466035 Anybody have an idea about how we can find the Encryption key ? For the ctr.enc file ? <-> I have the first token "token1" but I'm really struggling to get "token2". I don't want the answer but can someone point me in the correct direction.
+
+0.8385326290679668 Since the VPS provided by the uni is not exposed to the Internet, how do we obtain SSL certificates for https from Let's Encrypt? It is not possible to use certbot (or similar) because the VPS needs to be reachable from the public Internet for the challenge. <-> Hi,
+Just wanted to check something as I'm not sure either way. I've now got a CI pipeline fully setup, and in last week's masterclass it was at least implied that once we'd done that we should be able to go to our ip address at port 8080 and we would get a basic JHipster page back. However, I'm still getting a timeout message when I attempt to do this, and further I'd assume this would need some boilerplate code in the repository that I can't find. For the sake of clarification, should we be able to get something back from the ip address once the CI pipeline is setup or not?
+
+0.8766879123180142 Since the VPS provided by the uni is not exposed to the Internet, how do we obtain SSL certificates for https from Let's Encrypt? It is not possible to use certbot (or similar) because the VPS needs to be reachable from the public Internet for the challenge. <-> For the S2 task allocation and planning, as it’s an individual submission won’t we all have the same tasks to complete? So what should we really be including in it?
+
+0.8822584759574863 Hello there, I have a question for kanban boards, is it okay to use other services like clickup or trello instead of using the kanban from gitlab? <-> Dear Sir, I still have a question about Kanban card. The Kanban card is the issue on the board of Gitlab right?     Then how can I transfer my issues to add to my pdf file which needs to be submitted? Thank you!
+
+0.8049940425967004 hello question kanban boards services clickup trello instead using kanban gitlab  <-> still question kanban card kanban issue board gitlab right transfer issues needs submitted thank
+
+0.7929042544290534 hello question kanban boards services clickup trello instead using kanban gitlab  <-> hello provided module instruction appear linux
+
+0.5484758417028262 hello meeting diary chair secretary example necessary  <-> hello provided module instruction appear linux
+
+0.563255262630741 hello meeting diary chair secretary example necessary  <-> examples kanban cards unsure detailed tasks feature mockup examples would
+
+0.7832334789400553 still question kanban card kanban issue board gitlab right transfer issues needs submitted thank  <-> examples kanban cards unsure detailed tasks feature mockup examples would
+
+0.8554454592721307 submission member commit committing feature we're submission committing anything prove we've commit repository also correct saying repositories provided repository we're committing  <-> questions first individual submission kanban feature cards personas member group submit individualized version right totally personas kanban feature cards right mockup functionality still different individualized versions mockups development topic right thank
+
+0.9161395720098156 madasar quick question regarding submission individual tasks group project speaking vincent unsure mockup meant editable image working features buttons possible every button would time thanks  <-> questions first individual submission kanban feature cards personas member group submit individualized version right totally personas kanban feature cards right mockup functionality still different individualized versions mockups development topic right thank

@@ -1,0 +1,226 @@
+Question Topic,Question Content,Tags
+"In a list, how to pick whatever is not f and it's derivatives?","Suppose I have a list like:
+list1 = {{f[x], Sin[x]}, {f'[x]}, {f''[x]}};
+list2 = {{f[x]}, {Cos[x], f''[x]}};
+
+
+
+
+I want to pick these lists and convert them to:
+list1 = {{f[x], Framed[Sin[x]]}, {f'[x]}, {f''[x]}};
+list2 = {{f[x]}, {Framed[Cos[x]], f''[x]}};
+
+Ie: Apply a listable function in these lists that return the list with a function such as Framed[x] applied in whatever functions are not f and it's derivatives.","list-manipulation, replacement"
+What is an important mathematical question?,"$\DeclareMathOperator\GL{GL}$Many times I have heard people say sentences like X is an important question/ X is a natural question. I find this very surprising because to me it's all a matter of taste. I am having people ask me why study certain things and my mental response is it's fun or just out of curiosity; but often what I found is when I present my question with enough jargon then they agree my questions are worth studying.
+An example is Schur positivity: for me it's an extremely rare phenomenon and every time a family of symmetric functions is Schur positive I feel it's worthy of study in its own right. But when I need to explain to people I need to talk in terms of Frobenius map, representations of $\GL_n$ and so on. But I never understood myself why representations of symmetric group or $\GL_n$ is more important than symmetric functions.
+So I really want to know how to decide whether a question is worth studying? How do I decide what question is important to ask in mathematics?
+I am sorry if this is not the right place to ask this. I will remove it if it violates MO policy somehow.","ho.history-overview, big-picture, soft-question"
+"""Guarantee"" Nature publication for PhD?","I am currently applying as a PhD student in a group at the intersection of experimental physics and engineering in a rather interdisciplinary research environment in Germany. The group only exists for about 2 years now. The group leader told me that he would expect every PhD student to be author of at least one Nature spin-off paper at the end of their PhD (Nature Physics, Nature Electronics, Nature Photonics, ...) and not ""only"" journals like Physics Review Letters (in my eyes publishing in the PRL family is already quite the accomplishment?). He said they would choose their research topics in such a way that these expectations would be realistic.
+Are such expectations realistic? Can one ""force"" publications in such high-impact journals just by deliberately choosing the right topics? I have no experience with publishing my research in journals and thus do not really know what to think about this.","publishers, phd, publishability, application, publications"
+Summing the Digits of a Number,"Challenge
+
+Given a non-negative integer, find the sum of its digits.
+
+Rules
+
+Your program must take a non-negative integer as input.
+Your program should output the sum of the digits of the input integer.
+Your program should be able to handle inputs up to 10^100.
+
+Examples
+
+If the input is 123, the output should be 6 (1 + 2 + 3).
+If the input is 888, the output should be 24 (8 + 8 + 8).
+If the input is 1024, the output should be 7 (1 + 0 + 2 + 4).
+If the input is 3141592653589793238462643383279502884197169399375105820974944592, the output should be 315.
+
+Format
+
+Your program should take input from standard input (stdin) and output the result to standard output (stdout).
+Your program should be runnable in a Unix-like environment.
+
+Test cases
+Input:
+123
+
+Output:
+6
+
+Input:
+888
+
+Output:
+24
+
+Input:
+1024
+
+Output:
+7
+
+Input:
+3141592653589793238462643383279502884197169399375105820974944592
+
+Output:
+315
+
+Scoring
+
+This is a code-golf challenge, so the shortest code (in bytes) wins.","code-golf, number, arithmetic"
+At what technological level can a mixed-gender military not be at a disadvantage to an all-male one?,"In various fantasy settings, female combatants are quite common. There is a history of women in the military in real life but such women were generally rare and often hid their identity. Warfare was generally seen as the domain of men in many different cultures.
+In an alternate world, a new culture arises in the Middle East. This culture is very big on gender equality. Men and women equally share every job and position in society. This includes the military. This culture often gets into land and naval battles with its more patriarchal neighbors. Said neighbors only have men serving in the military.
+My fictional culture has actually no sexism but they are still composed of humans. Women are still generally smaller and weaker than men. For that and other reasons, my egalitarian nation(s) could potentially be at a disadvantage in warfare. As technology progresses however, warfare is less and less dependent on the physical capabilities of the average foot soldier. For this reason and others, there are far more women serving in the military in modern times than there were in the past (but it is still far from 50% even in 2023).
+With all else being equal (population, weapons, competence, etc.) At what technological level will the mixed-gender military not be at a disadvantage compared to the single-gender military? Could having a large number of ancient female warriors actually be a viable decision? Or is that only strategically wise in a post-industrial or even post-modern military setting?","technology, female, warfare, future, alternate-history"
+Breaking spokes,"My boyfriend (Joe) bought a Trek Verve 3+ on December 12, 2022 to use as his work bike. He is the bike patrol at a planned community consisting of approximately 17,000 acres. He works 5 days/40 hours and rides 52-55 miles a day on the bike. In less than 3 months he has popped several spokes, upgraded to a stronger tire, and now 4 broken spokes in 4 weeks. Yes, the shop fixes at no charge however, he cannot always get it back the same day which results in loss time at work. At first the bike shop was telling him that he was incorrectly riding the bike although he has been riding a long time without any broken spokes.
+He reached out to Trek corporate who graciously is sending a replacement rim. At this point, he has had the bike for less than 3 months and is not happy. Could it be the bike vs being the rim? Anyone else experience this or have any suggestions/feedback?",spokes
+What led to the fall of shell accounts?,"In the early days of the internet, shell accounts were commonly used for Internet access. After the early 2000's, it seems like shell accounts all but disappeared, and after searching, I can't really find why.
+Were they not user friendly enough? Did competing services (i.e. AOL) become cheaper and mainstream?",internet
+"""Candy Crush"" a string","Given a non-empty string (or an integer, or a list/array if you prefer) composed exclusively of digits in the range [1-9], your task is to write a function (or a whole program) that applies a ""Match-3 type of rule"" from left to right and outputs the resulting string, like this :
+[parameter] ""12223"" -> [returned value] ""13""
+
+Meaning, while parsing the string from left to right if you encounter the same digit repeated 3 or more times successively, this whole group of digits must ""disappear"", resulting in the concatenation of the left and right part of the remaining string.
+Each time you deal with a group, you must start again from the left end and reiterate the same process until the string no longer changes (normally when you finally reach the right end).
+If the string becomes empty at the end of the process, you should output an empty string, or the digit 0, or an empty list/array as you prefer.
+
+Test cases :
+""1"" -> ""1""
+""31122213"" -> ""33""
+""44555554446"" -> ""6""
+""1322232223222311"" -> ""1311""
+""111"" -> """"
+""7789998877"" -> """"
+
+This is code-golf, so the shortest solution in bytes wins.",code-golf
+Is money we make completely taken away by taxes?,"In my opinion, any money we make will be completely taken away by taxes. Here is my logic.
+When I earn some money (x), I have to give some as tax to the government. For example, let it be 10% of my income. After taxes, I have х - х * 10% = 0.9x of the money I earned. I will spend this money on my needs, and it will become someone's profit. Therefore, this person will also pay 10% to the government.
+In this way, the initial amount will remain 0,9х - 0,9х*10%=0,81x.
+Here is my calculation table:
+
+As we can see, after 30 steps, only 4% of the initial amount will remain from this money. And this happens with any salary.
+In the next tax period, I will earn new money and the whole cycle will repeat itself.
+My friends told me that I am wrong, and taxes don't take 100% of our money because after taxes we still have 90% of the money we earn.
+In my opinion, such a view is wrong, because it reflects only 1 present moment, not taking time into account. The money that remains in the hands of a specific person is just a temporary advance.
+I also want to pay attention to the fact that our salary was also someone's income, therefore, compared to the employer, we are several steps down when it comes to money movement. In any case, the government with the help of taxes will take all 100% (close to 99.99% to be very precise) of our money, just not immediately, but a few steps later. So tax rate shows the speed with which the money will be withdrawn. For example, when tax rate is 30%, then money completely disappears in 10 moves.
+Mathematically, everything seems to be true, but is everything like that in reality?
+People told me that I am wrong, but don't explain why, so where am I making a mistake?","monetary-policy, money, taxation, gdp, macroeconomics"
+Why does the FET input stage of op-amps still have an input current limit?,"AFAIK, Igs of MOSFET/JFET is around 0.
+That means that in MOSFET/JFET almost no current flows from gate to drain.
+Modern FET input stage:
+
+I read some op-amp datasheets, those op-amps have FET inputs, but they still have a max. value for the input current.
+For example, the OPA2810:
+
+OPA355:
+
+Theoretically, the FET input stage of op-amps has a current input of about 0, so why does the FET input stage of op-amps still have an input current limit?","mosfet, jfet, operational-amplifier"
+Do 'ration' and 'station' rhyme in any English accents?,"In Kipling's Bridge Guard in the Karoo, there is a verse
+
+We stumble on refuse of rations,
+The beef and the biscuit-tins;
+We take our appointed stations,
+And the endless night begins.
+
+'Ration' and 'station' sounds to me like an eye-rhyme, as the 'a' in ration is short but the 'a' in station is long. Are there accents where those two words have the same 'a' sound?","accent, rhymes"
+Where to put an inheritance of $1.4 million upon first receiving it,"Sometime in the next year, I will receive an inheritance of 1.2 to $1.4 million. I am concerned about the safety of money in a bank with threats to USD thanks to fiat vulnerability. I live in the United States and I am 75 years old. My goal is to protect purchasing power and grow this amount over the next 10-15 years to pass it to my children. I live modestly and have no debt. Where should I put this money on day one? What about over the next year? Comment on my plan to watch for crashing real estate prices and to invest in depressed prices on rental real estate.","savings, real-estate, bank-account"
+"Are there any indications that Luke ""knew it to be true""?","In one of the most iconic scenes from Star Wars ( if not perhaps cinema history) Darth Vader reveals -
+
+ That he is Luke's Father
+
+To this Luke shouts NOOOOOOOOOOO!, and Darth Vader says - ""Search your feelings, you know it to be true!"", it is this particular line of Darth Vader that my question is about.
+Are there any indications that Luke indeed knew it to be true, because he accepted pretty quickly that Vader was infact related to him and did not just discard it as some bullshit some villain was saying to lure him into his trap.
+So are there any indications that Luke in fact knew that Darth Vader was related to him??","the-empire-strikes-back, star-wars"
+How do gas turbine engines and turbofan engines keep constant compressor side rpm?,"How do the RPMs stay constant in a gas turbine engine? For example in car with piston engine, when you keep pressing the accelerator the rpms keep picking up, to keep the rpms constant you must let off the throttle, if you keep the throttle floored you will reach peak powers rpm and even go higher rpm if engines max rpm isnt limited at peak power. My question is that how do gas turbine engines can stay at peak power rpm while still throttle is fully applied? Shouldnt it keep increasing in rpms like car engine?","turbojet, turbine, compressor, turbofan"
+Why will changing the solvent crack the column for column chromatography?,"When we perform column chromatography with silica to purify the reaction crude product, we sometimes need to change the solvent system to better extract our target product.
+For example, changing from pure hexane to 1:4 hexane:DCM. However, if the polarity is not change gradually, it often leads to column cracking, which means there are air bubbles (or is it solvent bubbles?) in the column, and it will affect elution the pattern.
+Why might changing solvent polarity crack the column? And where is the air coming from? I do not see how the air is getting into the column when there are solvents sitting above it.","organic-chemistry, chromatography, synthesis"
+"Enabling dynamic lighting in Roll20, but the dynamic lighting tab is missing","Trying to enable dynamic lighting but I'm missing the Dynamic Lighting tab shown in the official tutorial.
+My Game:
+
+The official tutorial:",roll20
+"How can you achieve decent clock accuracy in microcontrollers (e.g., max 1 second drift in a year)? How do digital watch manufacturers accomplish it?","I am learning with microcontrollers (mostly PIC16/18 and AVR) for some time, making various experimental projects. One of things that I found surprisingly challenging is maintaining decent clock accuracy.
+Most of my projects have internal clocks at least to display uptime, but many of them (those that have display interface) also have an adjustable clock. I even created my own alarm clock for my bed table using a PIC16, but all of them are surprisingly inaccurate, despite using crystal oscillators (using internal RC clock is absolutely terrible.)
+I implemented various interactive settings to configure drift to make the clock as accurate as possible, but I am still facing drift of about 10 seconds after two months compared to an NTP calibrated clock (in my phone.)
+Basically this is my observation:
+
+Internal RC clock - drifts by ~10 seconds within 24 hours
+Crystal oscillator 8 MHz - using default interrupt delays calculated by MPLAB MCC drifts by ~10 seconds within few days
+Crystal oscillator 8 MHz - using calibrated delays per each crystal individually drifts by ~10 seconds within a month
+Crystal oscillator 16 MHz - using calibrated delays per each crystal individually drifts by ~10 seconds within two months
+
+What also surprised me is that each crystal, even if the same frequency and from the same manufacturer is giving slightly different frequency, because each needs different calibration to give accurate time. Is that something common?
+I am using cheap crystals you can buy at Farnell, such as this one.
+I was reading about this and found that there are some ""oven-controlled crystal oscillators"" that are necessary for accurate time that maintain temperature of the crystal, but I find it hard to believe that these small ovens are installed in electronics like wristwatches.
+My calibration mechanism allows me to adjust the ""second interval"" to the resolution of single clock cycle of the microcontroller, yet it still isn't accurate even with a 16 MHz crystal after several months.
+How do wristwatch manufacturers solve this problem?
+
+Are they using oven controlled crystals?
+
+Are they calibrating each single wristwatch individually as each crystal has a slightly different PPM offset / frequency than other one?
+
+
+Lots of electronics come with classic 24-hour clocks, yet they don't use NTP for syncing.  How is this generally done?","clock-speed, microcontroller, crystal, oscillator"
+How does the Chinese government having minority stakes and board seats gives it effective control over them?,"All of that changed over the past few years as Beijing went after some
+of the country’s biggest tech companies and its highest-profile tech
+entrepreneurs. The aim was to ensure no institution or individual
+could wield influence on the Chinese society comparable to the
+Communist Party. The government took minority stakes and board seats
+in some of those companies, giving it effective control.
+
+https://www.nytimes.com/2023/02/17/business/china-chatgpt-microsoft-openai.html
+I was reading this and it didn't make any sense to me since you need the majority of shares in order to control a company, having a minority stake doesn't really change anything as the previous board members knew the government would interfere if it didn't please the Chinese government, same could be said about the U.S. government except the U.S. government is less likely to go against the private sector unless there's some public outrage. Can someone explain to me how the above makes sense? I don't see evidence that companies are less innovative than before, because Chinese tech companies are some of the most innovative still. It's like when they used to say that non-democratic countries cannot be innovative in science and tech in the 90s, which turned out to be completely false.","law, economy, china"
+My supervisor is suggesting implementing an idea that they previously rejected,"I am in a very confusing situation. I am almost 3 years into my PhD project, and just today my direct supervisor suggested to me to read a paper in the best journal a PhD student would want to publish in.
+After going through it, I realised that they have used a method that I spotted during the 5th month of my PhD. I did multiple experiments with that method with success, but at some point my supervisor told me that they didn't want to talk about that analysis anymore. I kept working on it without telling them.
+Today, I could not believe that my supervisor was suggesting an idea they have rejected before. I just can't. I double checked the results from back then, and there are multiple significant results. I am not sure if I can keep working with them anymore.
+How should I proceed from here?","research-topic, interpersonal-issues, phd, advisor"
+What is the meaning of kindled and sensitized in the following paragraph?,"My native lanugage is Hindi, and I am not versed in English. I am reading a book and I came across the following paragraph:
+
+Maybe most serious of all is when the fight-or-flight response becomes
+“kindled,” or sensitized, making the child much more easily and repeatedly
+startled. When this happens, the child pulls away from us.
+
+I am not able to understand the above paragraph primarily because of the two words: Kindled, and sensitized. I searched for the meaning of these two words over the internet, but I couldn't see how these two words fit in the context of above paragraph. Can someone help me to understand the meaning of the above paragraph?",meaning-in-context
+Definite integrals with equal limits,"As a property of definite integrals, we teach that definite integrals are zero if the lower and upper limits are the same (Wolfram mathworld says this too).  Is this valid in general?
+In the case of integrating $\dfrac1{4+\sin^2x}$ from $0$ to $π$ using the substitution $t = \tan x,$ we get both new limits $0,$ so the integral should be $0$, but if you use the symmetry of the graph and describe the integral in terms of area, you get a positive value. How would explain this to students? Do we need to say that there are exceptions?","secondary-education, integration, calculus"
+How does gradient pass through argmax in classification,Just realized I have not given this issue much thought. In classification task there is an argmax happening after the softmax to get the most likely class. So how does backprop go through that operation?,"classification, backpropagation"
+1+2+3+4+… and −⅛,"Is there some deeper meaning to the following derivation (or rather one-parameter family of derivations) associating the divergent series $1+2+3+4+…$ with the value $-\frac 1 8$ (as opposed to the value $-\frac 1 {12}$ obtained by zeta-function regularization)? Or is it just a curiosity?
+Formally put $x=1+2+3+4+\dotsb$. Writing $$x-1=(2+3+4)+(5+6+7)+\dotsb=9+18+27+\dotsb=9x$$ we get $8x=-1$. Or, writing $$x-1-2=(3+4+5+6+7)+(8+9+10+11+12)+\dotsb=25+50+75+\dotsb=25x$$ we get $24x=-3$. Or, writing $$x-1-2-3=(4+\dotsb+10)+(11+\dotsb+17)+\dotsb=49+98+147+\dotsb=49x$$ we get $48x=-6$. Etc.
+It is not surprising that values other than $-\frac 1 {12}$ can be obtained as “values” of this divergent series. What surprises me is that all of these methods of grouping terms give the same answer. It makes me wonder whether there is a larger story here.","regularization, divergent-series"
+How would one comply with a court order to unpublish unlimitable information?,"(If this has been asked, please deduplicate; I searched but couldn't find anything similar. Thanks!)
+This is wholly hypothetical, I hope. Let's have two people, ""Alice"" and ""Bob"". Alice publishes some data that, for whatever legal reason, they ought not to publish. Bob gets some sort of court order which directly instructs Alice to stop publishing the content. From what I've heard, the court may deputize Alice somewhat, instructing them to not just cease publication, but also to actively inform other publishers that they must cease & desist. If those other publishers continue, then Bob may complain to the court again, and the court may order those other publishers to cease as well.
+We are now in the 21st century, though, and the content may be available via e.g. Bittorrent, a key-value data store which can make data internationally available as long as one person, somewhere in the world, is reachable and has a copy of the data. This can create a problem for Alice; let's imagine a third person, ""Mallory"", who sits beyond the court's jurisdiction. Mallory openly flouts the court order by publishing a Bittorrent key (a torrent file or magnet link) which allows anybody to obtain a copy of the data. (Also note that tools like Magnetico can be used to let anybody become an eavesdropper, passively learning Bittorrent keys as they transit the network. Mallory may ""openly flout"" the court without the equivalent of a conspicuous notice in a public place.)
+Given that Alice has been instructed by the court to stop publishing the data, and given that Mallory refuses to stop publishing the data, what might Alice be obliged to do to comply with the court?
+Since this is an international question, answers can pertain to any jurisdiction!","internet, non-disclosure, injunctions, united-states, canada"
+How to reproduce this stylistic z-transform symbol from Phillips et al,"The text ""Digital Control Systems Analysis and Design"" by Phillips et al. uses this symbol for z-transforms
+
+Zooming in it looks like this
+
+Lastly, if I copy the symbol I get ""픃"". How can I create this symbol in LaTeX or one that looks like it?",symbols
+"Why would/wouldn't *humanoid* robots become popular, rather than any other robotic body-form?","Most robots that exist in the world today are factory robots. Not particularly humanoid, except the arm+hand concept. When you design a robot to replace the human task of pushing a vacuum cleaner around the house, you don't design a robot that resembles a human in any way.
+Roboticists today are designing all sorts of robots: with wheels, with tracks, with six legs, etc. So my question is: should we expect robots of a near-future setting to be humanoid? Would they be bipedal?
+Of course, one thing sophisticated robots (not hoover robots and factory robots) need is adaptability. The human body-form can do a lot of different things. But so can the hexapedal form, for example.
+Mother Nature already dealt with this question of what body-plan to use for Her most sophisticated beings, and she settled on humanoid for reasons I don't fully understand, discussed a bit in this question.
+Would people in the near-future bother manufacturing humanoid/bipedal robots, or could we get any job done with other body-plans?","science-in-society, robots"
+I'm a manager and a person in my team has poor writing and speaking skills. Should I bring up this feedback during annual performance review?,"I work in the software development industry and this is the first formal job of this person. They have particular personal reasons to have bad writing and speaking skills, mainly due to bad education access during a huge part of their life.
+While the communication of this person is not bad at all (they can ask questions, ask for feedback, give feedback, complete tasks), it is clear that the lack of a more complex vocabulary and especially the amount of incorrectly written words in their messages are seriously hurting their ability to improve as a professional.
+Particularly I find it a bit unprofessional to bring up this topic during the annual performance review (this person is not below the expectations of the position), but I truly believe that improving on those skills will bring much more value than studying software development and technology for example. By better studying the language I'm sure this person will be able to have a much better understanding of what they need to do and how to better express themselves during necessary situations.
+This feedback was brought up by me but we have received feedback from other members of the team as well, so it is not something that concerns only me.
+So the question is: is it plausible to include this topic in this person's performance review? And if so, should I also provide educations resources to help this person to improve?","communication, performance-reviews"
+"Intel ""Kernel processor"" or ""OS Kernel""","I used to have an Intel data book from 1981. I gave it away to a friend, and he probably also lost it along the way.
+In this book there was a data sheet for a component called ""OS Kernel"" or something like that. I always wondered (because it was not clear from the information) what kind of component that was, or should have been. I don't really remember anything else much about it. Looking on the internet for old Intel data sheets also seems like a lost cause, as it only brings up things from less than 10 years old.
+Can anyone help finding pointers?
+(I suppose that in that data book a whole lot of obscure Intel technology was described, like the iAPX 432).",intel
+"Is the ""Chinese room"" an explanation of how ChatGPT works?","Sorry if this question makes no sense. I'm a software developer but know very little about AI.
+Quite a while ago, I read about the Chinese room, and the person inside who has had a lot of training/instructions how to combine symbols, and, as a result, is very good at combining symbols in a ""correct"" way, for whatever definition of correct. I said ""training/instructions"" because, for the purpose of this question, it doesn't really make a difference if the ""knowledge"" was acquired by parsing many many examples and getting a ""feeling"" for what's right and what's wrong (AI/learning), or by a very detailed set of instructions (algorithmic).
+So, the person responds with perfectly reasonable sentences, without ever understanding Chinese, or the content of its input.
+Now, as far as I understand ChatGPT (and I might be completely wrong here), that's exactly what ChatGPT does. It has been trained on a huge corpus of text, and thus has a very good feeling which words go together well and which don't, and, given a sentence, what's the most likely continuation of this sentence. But that doesn't really mean it understands the content of the sentence, it only knows how to chose words based on what it has seen. And because it doesn't really understand any content, it mostly gives answers that are correct, but sometimes it's completely off because it ""doesn't really understand Chinese"" and doesn't know what it's talking about.
+So, my question: is this ""juggling of Chinese symbols without understanding their meaning"" an adequate explanation of how ChatGPT works, and if not, where's the difference? And if yes, how far is AI from models that can actually understand (for some definition of ""understand"") textual content?","chatgpt, machine-learning"
+Looking for a SF/alternate history book about a 19th century style explorer who navigates lands with corrupted fauna and flora,"Apologies in advance for the vagueness, as I have not read it but only remember fragments of the summary blurb on the back from glancing at it in a bookstore.
+What I do remember:
+
+It imitated the atmosphere of those 19th century (or early 20th) travel memoirs/notes, but was written either this century or in the late 90's onwards based on the vibe/cover design etc.
+Was in English
+The premise is that of an explorer who encounters gradually more corrupted wildlife as he explores the lands
+I think it took place in an alternate America or at least in an Anglo setting.
+The cover included painted depictions of a wild scene (i.e. one an explorer would venture into) with a slightly eerie quality
+
+From googling various combinations of keywords, I either get actual 19th century travel memoirs or works like those of Jeff VanderMeer that have to do with the same idea of corruption but aren't the target book. ChatGPT was unable to find it either with the description above.",identification-request
